@@ -78,3 +78,4 @@ favMovies.splice(15,1,'Avatar');
 let sliceLastHalf = favMovies.slice((favMovies.length / 2) - 1, favMovies.length -1);
 console.log(sliceLastHalf);
 console.log(favMovies);
+console.log(favMovies.indexOf('Fast and Furious'));//index 14. It's not gone because the instructions were to sort the array before popping it...
