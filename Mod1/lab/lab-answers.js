@@ -47,3 +47,34 @@ for(let turtle of turtles){;
     console.log(turtle.toUpperCase());
 }
 
+//methods, revisited
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+//log index of titanic
+console.log(favMovies[8]);
+//sort favMovies array
+favMovies.sort();
+//pop favMovies
+favMovies.pop();
+//push guardians of galaxy favMovies
+favMovies.push('Guardians of the Galaxy');
+//reverse favMovies array
+favMovies.reverse();
+//shift favMovies;
+favMovies.shift();
+//unshift favMovies
+favMovies.unshift('Terminator 2: Judgment Day');
+//find index of Django
+console.log(favMovies.indexOf('Django Unchained'));
+//splice Django for Avatar
+favMovies.splice(15,1,'Avatar');
+//slice last half of array, programmatically
+//---- testing last halfyness for splice--- 
+//for(let i = favMovies.length / 2 - 1; i <= favMovies.length -1; i++){
+//     console.log(favMovies[i]);
+// }
+//---the slice itself:
+//favMovies.slice(favMovies.length / 2 -1);
+//store slice in variable and log it
+let sliceLastHalf = favMovies.slice((favMovies.length / 2) - 1, favMovies.length -1);
+console.log(sliceLastHalf);
+console.log(favMovies);
