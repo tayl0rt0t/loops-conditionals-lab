@@ -41,3 +41,9 @@ console.log(dart);
 //wolfy change name
 wolfy.splice(0,1,"Gameboy");
 console.log(wolfy);
+//yell at ninja turtles
+const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"] 
+for(let turtle of turtles){;
+    console.log(turtle.toUpperCase());
+}
+
