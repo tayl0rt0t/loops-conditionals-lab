@@ -79,3 +79,25 @@ let sliceLastHalf = favMovies.slice((favMovies.length / 2) - 1, favMovies.length
 console.log(sliceLastHalf);
 console.log(favMovies);
 console.log(favMovies.indexOf('Fast and Furious'));//index 14. It's not gone because the instructions were to sort the array before popping it...
+//Where is Waldo
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                      ["Lucinda", "Jacc", "Neff", "Snoop"],
+                      ["Petunia", ["Baked Goods", "Waldo"]]];
+//remove eggbert                    
+whereIsWaldo.splice(1,1);
+//remove neff, change to No One
+whereIsWaldo[1].splice(2,1,"No One");
+console.log(whereIsWaldo);
+//access and log waldo
+console.log(whereIsWaldo[2][1][1]);
+//overly complicated nested for loop I first tried as an attempt to achieve the splice above. as soon as I came to this solution, I realized I didn't need to put myself through this -_- good practice, tho.
+// for (let i = 0; i < whereIsWaldo.length; i++){
+//     if(i == 1){
+//         for(let j = 0; j <= whereIsWaldo[1].length; j++){
+//             if(j == 2){
+//                 whereIsWaldo[i].splice(j,1,"No One");
+//                 console.log(whereIsWaldo);
+//             }
+//         }
+//     }
+// }
